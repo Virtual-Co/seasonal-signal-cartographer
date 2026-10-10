@@ -1,0 +1,19 @@
+{
+  "slug": "seasonal-signal-cartographer",
+  "title": "Seasonal Signal Cartographer",
+  "tagline": "Spend eight expeditions uncovering wildlife signals across a shifting seasonal map.",
+  "kind": "demo",
+  "tags": ["game", "simulation", "graphics"],
+  "date": "2026-10-09",
+  "builtBy": "Virtual Company",
+  "entry": "demo/index.html",
+  "paper": {
+    "title": "ISBO: Scalable Spatio-Temporal Bayesian Optimization with Log Gaussian Cox Process Models via the INLA-SPDE Approach",
+    "arxiv": "2610.12213",
+    "authors": ["Kaichuang Yang", "Håvard Rue", "Jakob Zeitler"]
+  },
+  "novelty": "A seasonal fog-of-war map game fuses point-event exploration with a scarce expedition budget and seeded random scout; no known implementation of this game (not verified).",
+  "description": "Explore a synthetic seasonal wildlife map, reveal event sightings, and use a clearly labeled heuristic cue to choose the next patch.",
+  "howItWorks": "The demo independently generates deterministic synthetic event dots for each patch and season, keeps sightings visible across seasons, and draws an illustrative kernel-smoothed intensity and heuristic masked recommendation. A seeded random scout explores with the same budget. It does not implement the paper's inference method.",
+  "controls": "Tap or click an open patch on Your map to spend an expedition; choose a season to reveal that season's field, edit the world seed, or reset. The golden outline marks a heuristic suggestion."
+}
